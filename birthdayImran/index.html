@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday 💖🏴‍☠️</title>
+<link rel="icon" href="shey_1.jpeg"\>
+
+<style>
+
+body{
+  margin:0;
+  font-family:'Comic Sans MS', cursive;
+  overflow-x:hidden;
+  background-image: url('bgonepiece.jpg');
+  background-size: cover;      /* supaya penuh skrin */
+  background-position: center; /* tengah-tengah */
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+/* FRONT PAGE */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+
+.child-gallery{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+  gap: 15px;
+  justify-items: center;
+}
+
+.child-gallery img{
+  width:150px;      /* adjust ikut suka */
+  height:220px;     /* pastikan square */
+  border-radius: 0; /* TIADA oval/round */
+  object-fit: cover; /* gambar fit dalam square */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.child-gallery img:hover{
+  transform: scale(1.1);
+}
+
+
+h1{
+  color:#fff;
+  text-shadow:2px 2px 5px rgba(0,0,0,0.5);
+  font-size:40px;
+  text-align:center;
+}
+
+.start-btn{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  border-radius:30px;
+  background:#ff6347;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* Belon terapung */
+.balloons img{
+  position:absolute;
+  bottom:-100px;
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp{
+  0%{transform: translateY(0);}
+  100%{transform: translateY(-100vh);}
+}
+
+/* CONTENT PAGE */
+#content{
+  display:none;
+  text-align:center;
+  padding:50px 20px;
+}
+.circle-date{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  background: rgba(255,255,255,0.8);
+  margin: auto;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+}
+
+.circle-date .month{
+  font-size:18px;
+  color:#ff69b4;
+}
+
+.circle-date .day{
+  font-size:48px;
+  color:#ff4081;
+}
+
+
+section{
+  margin-bottom:40px;
+
+  padding:30px;
+
+
+}
+
+section h2{
+  font-size:28px;
+  color:#ff69b4;
+  margin-bottom:20px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+  gap:20px;
+  max-width:700px;
+  margin:auto;
+}
+
+.gallery img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+  transition:0.3s;
+}
+
+.gallery img:hover{
+  transform: scale(1.08);
+}
+
+
+.btn{
+  background:#ff69b4;
+  border:none;
+  border-radius:30px;
+  padding:12px 25px;
+  color:white;
+  font-size:16px;
+  margin:10px;
+  cursor:pointer;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+.wish-container{
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  animation: fadeIn 0.8s ease;
+}
+
+/* animation lembut bila muncul */
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+.hidden{
+  display:none;
+}
+
+video{
+  width:250px;
+  border-radius:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MUSIC AUTOPLAY -->
+<audio autoplay loop>
+  <source src="happyBirthday.mp3" type="audio/mp3">
+</audio>
+
+<!-- FRONT PAGE -->
+<div class="hero">
+  <div class="child-gallery">
+    <img src="imran_1.jpeg" alt="child1">
+    <img src="imran_2.jpeg" alt="child2">
+    <img src="imran_3.jpeg" alt="child3">
+    <img src="imran_4.jpeg" alt="child4">
+  </div>
+</section>
+
+  <h1>🎉 Happy Birthday <span>IMRAN!!</span> 🏴‍☠️</h1>
+  <button class="start-btn" onclick="openSite()">Sini Sayangg 💖</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="content">
+
+  <div class="open-section">
+    <h2>📅 Your Special Day</h2>
+    <div class="circle-date">
+      <div class="month">January</div>
+      <div class="day">2</div>
+    </div>
+  </div>
+
+  <div class="open-section">
+    <h2>📸 Our Memories</h2>
+    <div class="gallery">
+      <img src="us_1.jpeg">
+      <img src="us_2.jpeg">
+      <img src="us_3.jpeg">
+      <img src="us_4.jpeg">
+      <img src="us_5.jpeg">
+      <img src="us_6.jpeg">
+      <img src="us_7.jpeg">
+      <img src="us_8.jpeg">
+    </div>
+  </div>
+
+  <div class="open-section">
+    <h2>💖 For You</h2>
+    <button class="btn" onclick="showWish()">💌 Wish</button>
+    <button class="btn" onclick="showVideo()">🎥 Video</button>
+    <button class="btn" onclick="surprise()">🎁 Surprise</button>
+
+    <p id="wish" class="wish-container hidden">
+      HAPPY BIRTHDAY SAYANG SAYA!! Dah 24 tahunnn dah besaq dah leh kawen dah ni HAHAHAHAHHA..Semoga awak panjang umur, murah rzeki, sihat slalu..
+      Semoga semua yg awak plan dipermudahkan..THANK YOU HADIR DALAM HIDUP SAYA SAYANGGG!!THANK YOU SELALU SABAR DENGAN SAYA..kalau rsa diri tu tak penting utk org lain,
+      INGAT AWAK TU PENTING UNTUK SAYA HEHEHE..
+
+      LOVE YOU SAYANG💖,
+      SHAHIRAH MALEK.
+    </p>
+
+    <video id="video" controls class="hidden">
+      <source src="vidBirthday.mp4" type="video/mp4">
+    </video>
+  </div>
+
+</div>
+
+
+<script>
+// Belon floating
+const balloonContainer = document.querySelector('.balloons');
+for(let i=0;i<10;i++){
+  let b = document.createElement('img');
+  b.src = 'images/balloon.png';
+  b.style.left = Math.random()*window.innerWidth+'px';
+  b.style.animationDuration = 3+Math.random()*4+'s';
+  b.style.width = 30 + Math.random()*50 +'px';
+  balloonContainer.appendChild(b);
+}
+
+// Start website
+function openSite(){
+  document.querySelector('.hero').style.display="none";
+  document.getElementById('content').style.display="block";
+}
+
+// Buttons
+function showWish(){
+  document.getElementById('wish').classList.toggle('hidden');
+}
+function showVideo(){
+  document.getElementById('video').classList.toggle('hidden');
+}
+function surprise(){
+  alert("I love you more than words can say SAYANGG💕HADIAH BUAT MASA SEKARANG BAJU ONE PIECE JE HEHE, NANTI DAH KERJA SAYA BELIKAN YANG HEBAT2 LAGI HADIAH");
+}
+</script>
+
+</body>
+</html>
